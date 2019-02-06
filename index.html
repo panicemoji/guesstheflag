@@ -25,7 +25,7 @@
   <div id='app'>
     
 
-    <img id='flag' :src='src' width='128px' style='image-rendering: pixelated;'>
+    <img id='flag' :src='src' width='150px' >
       
 
     <h1 class='answerText' v-if='answerVisible'>{{countryLong}}</h1>
@@ -79,7 +79,7 @@
             var countryShort = countries[rand1][0];
             this.countryLong = countryLong;
               this.countryShort = countryShort;
-             this.src = 'https://www.countryflags.io/' + this.countryShort + '/shiny/64.png';
+             this.src = 'https://lipis.github.io/flag-icon-css/flags/4x3/'+ this.countryShort+'.svg';
             /*$('#flag').fadeOut(400,function(){  
               this.countryLong = countryLong;
               this.countryShort = countryShort;
