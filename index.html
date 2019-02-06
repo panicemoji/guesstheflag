@@ -51,7 +51,7 @@
   async: false
 });
     
-    $.get('https://panicemoji.github.io/guesstheflag/countries.txt', function(data){
+    $.get('countries.txt', function(data){
       countries = data;
       countries = countries.replace(/['"]+/g, '');
       countries = countries.split('\n');
